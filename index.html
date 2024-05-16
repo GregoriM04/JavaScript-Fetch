@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- FavIcon -->
+    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon" />
+
+    <!-- Fonts - Roboto & Caveat Brush -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS stylesheets -->
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <title>Dogs are Awesome</title>
+  </head>
+  <body>
+    <main class="main">
+      <div class="text-container">
+        <h1 class="title"><span>Dogs</span> are Awesome!</h1>
+        <h4 class="subtitle">
+          See some amazing dogs’ pictures using kinduff ‘s Dog API 
+        </h4>
+      </div>
+      <div class="action-container">
+        <div class="picture-container">
+          <img
+            src="./images/default-dog-picture.jpg"
+            alt="Default Dog Picture"
+            class="default-img"
+          />
+        </div>
+        <div class="btn-container">
+          <button class="new-btn" id="new-pic-btn" onclick="fetchImages()">
+            New Picture <ion-icon name="paw"></ion-icon>
+          </button>
+        </div>
+      </div>
+    </main>
+
+    <!-- ION-ICONS -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+
+    <script src="./main.js"></script>
+  </body>
+</html>
